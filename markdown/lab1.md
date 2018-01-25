@@ -36,6 +36,36 @@ DHTML is a collection of tools that are used to make the document dynamic using 
 
 ## 2. Coding conventions
 
+### JavaScript
+
+I'm going to use [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) with some personal modifications:
+
+```
+{
+  "extends": "airbnb",
+  "rules": {
+    "func-names": ["error", "never"], //https://eslint.org/docs/rules/func-names
+    "comma-dangle": ["error", { // https://eslint.org/docs/rules/comma-dangle
+      "arrays": "always-multiline", 
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }],
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }], 
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.js"]}],
+    //https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
+    "react/react-in-jsx-scope": "off", // React in global scope in Next.js
+    // https://eslint.org/docs/rules/semi
+    "semi": ["error", "never", { "beforeStatementContinuationChars": "always" }],
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
+    "jsx-a11y/anchor-is-valid": false // Allows Bootstrap link styling using Next.js Link component (no 'href' passed to a-node)
+  }
+}
+```
+
 OK, this may sound boring but coding conventions are really important when you are doing code professionally. Make yourself familiar what this actually means in practice.
 Here is a generic definition: https://en.wikipedia.org/wiki/Coding_conventions
 
