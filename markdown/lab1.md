@@ -2,12 +2,37 @@
 
 ## 1. Definitions
 
-### HTML
-### CSS
+### HTML (Hypertext Markup Language)
+
+HTML is a markup language is an open standard meant for structuring documents containing hyperlinks (hypertext).
+
+### CSS (Cascading Style Sheets)
+
+When HTML is concerned about the structure of the document, CSS is in charge of giving the document it's appearance. It is a declarative programming language that manipulates nodes of the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) in appearance using [selectors](https://www.w3schools.com/cssref/css_selectors.asp) and [properties](https://www.w3schools.com/cssref/default.asp). It can also achieve some dynamic aspects to the document for example using :hover selectors.
+
 ### Javascript
-### HTTP
+
+JavaScript (JS) is implementation of [EcmaScript standard (ES)](https://www.ecma-international.org/publications/standards/Ecma-262.htm), an interpreted scripting language first designed by Brendan Eich. It was long the only programming language natively supported by browsers (now there is also WebAssembly), but there are languages that compile to JS such as [TypeScript](https://www.typescriptlang.org/), [Dart](https://babeljs.io/)(optionally) and [Babel](https://babeljs.io/) (new EcmaScript(ES) features translated to ES5 or whatever the developer wishes).
+
+All browsers don't implement the same ES features, but the support comes gradually. That is why it is needed to compile newer features with Babel. The newest version of EcmaScript right now is ES2017 (ES8).
+
+JavaScript supports multiple programming paradigms such as
+- Object-oriented programming through prototypal inheritance
+- Functional programming that is being emphasized in later versions (ES2015 onwards)
+- Imperative programming
+
+
+### HTTP (Hypertext Transfer Protocol)
+
+HTTP is a protocol that is used to transmit documents between computers. The documents can be for example HTML documents between browser and server or [JSON](https://www.json.org/)/[XML](https://www.w3.org/XML/) objects transfered from/to server using JavaScript. Client is always to one initiating the contact and server responds contrary to for example [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API).
+
 ### HTML5
+
+[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) is the newest version of the HTML standard. It has numerous new features, for example video embeds, WebSockets and Web Workers.
+
 ### Dynamic HTML (DHTML)
+
+DHTML is a collection of tools that are used to make the document dynamic using only client side programming (no additional requests). Techniques involve for example using above mentioned :hover selectors in CSS and JavaScript manipulation using event handlers (for example onclick event that is triggered when the element is clicked). 
 
 ## 2. Coding conventions
 
