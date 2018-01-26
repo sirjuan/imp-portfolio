@@ -3,7 +3,7 @@ import Markdown from 'react-markdown'
 import Layout from '../components/MyLayout'
 
 import content from './markdown/post'
-import styles from './post.css';
+import styles from './post.css'
 
 const Post = props => (
   <Layout>

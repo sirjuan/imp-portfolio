@@ -28,17 +28,17 @@ const style = `
 
 export default class Header extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.toggle = this.toggle.bind(this);
+    this.toggle = this.toggle.bind(this)
     this.state = {
       isOpen: false,
-    };
+    }
   }
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen,
-    });
+    })
   }
   render() {
     return (
@@ -83,6 +83,6 @@ export default class Header extends Component {
         <style jsx global>{style}</style>
       </div>
 
-    );
+    )
   }
 }

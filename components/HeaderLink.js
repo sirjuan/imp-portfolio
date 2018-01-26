@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-import { NavLink, NavItem } from 'reactstrap';
+import { NavLink, NavItem } from 'reactstrap'
 
-const HeaderLink = ({ children, href }) => {
-  console.log(href)
-  return (
+const HeaderLink = ({ children, href }) => (
   <NavItem>
     <Link href={href}>
-      <a className="nav-link">{children}</a>
+      <NavLink>{children}</NavLink>
     </Link>
   </NavItem>
-)}
+)
 
 HeaderLink.propTypes = {
   children: PropTypes.node.isRequired,

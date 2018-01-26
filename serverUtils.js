@@ -2,7 +2,7 @@ const fs = require('fs')
 
 const writeFile = (pathToJs, pathToMd) => {
   if (fs.existsSync(pathToJs)) fs.unlinkSync(pathToJs)
-  fs.writeFileSync(pathToJs, 'export default (data) => `');
+  fs.writeFileSync(pathToJs, 'export default (data) => `')
   fs.createReadStream(pathToMd)
     .on('data', chunk => fs.appendFileSync(pathToJs, chunk))
     .on('end', () => fs.appendFileSync(pathToJs, '`'))
@@ -12,8 +12,7 @@ const writeFile = (pathToJs, pathToMd) => {
  *  file has been added or modified in /markdown directory
  */
 const writer = async (pathToMd) => {
-
-  const pathToJs = pathToMd.replace('markdown', 'pages/markdown').replace('.md', '.js');
+  const pathToJs = pathToMd.replace('markdown', 'pages/markdown').replace('.md', '.js')
   writeFile(pathToJs, pathToMd)
 }
 
