@@ -32,6 +32,10 @@ app.prepare()
       res.sendFile(`${__dirname}/example/${req.params.file}`)
     })
 
+    server.get('/assets/:file', (req, res) => {
+      res.sendFile(`${__dirname}/example/${req.params.file}`)
+    })
+
     server.get('/p/:id', (req, res) => {
       const actualPage = '/post'
       const queryParams = { title: req.params.id }
