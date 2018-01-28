@@ -28,7 +28,7 @@
     "react-transition-group": "^2.2.1",
     "reactstrap": "^5.0.0-alpha.4",
     "sass-loader": "^6.0.6",
-    "eslint-loader": "^1.9.0",
+    "eslint-loader": "^1.9.0"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^2.4.0",
