@@ -16,7 +16,7 @@
     ]
   ],
   "presets": [
-    "next/babel", "airbnb"
+    "next/babel"
   ],
   "ignore": []
 }
