@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import Markdown from 'react-markdown'
 import Layout from '../components/MyLayout'
 
-import content from './markdown/post'
+import content from './markdown/post' // eslint-disable-line
 import styles from './post.css'
 
 const Post = props => (
