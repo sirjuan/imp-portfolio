@@ -1,5 +1,6 @@
 {
   "extends": "airbnb",
+  "parser": "babel-eslint",
   "rules": {
     "func-names": ["error", "never"], //https://eslint.org/docs/rules/func-names
     "comma-dangle": ["error", { // https://eslint.org/docs/rules/comma-dangle
@@ -23,5 +24,12 @@
   "env": {
     "browser": true,
     "jest": true
-  }
+  },
+  "globals": {
+    "React": true,
+    "import": true,
+  },
+    "ecmaFeatures": {
+    "classes": true
+  },
 }

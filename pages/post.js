@@ -4,8 +4,8 @@ import Layout from '../components/MyLayout'
 
 import styles from './post.css'
 
-const Post = (props) => {
-  const content = require('./markdown/post') // eslint-disable-line
+const Post = async (props) => {
+  const content = await require('./markdown/post') // eslint-disable-line
   return (
     <Layout>
       <h1>{props.url.query.title}</h1>
