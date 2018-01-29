@@ -1,19 +1,13 @@
 import Markdown from 'react-markdown'
 import Layout from '../components/MyLayout'
+import content from '../markdown/lab1.md'
 // import styles from './lab1.css'
 // <style jsx>{styles}</style>
 export default class Lab1 extends React.Component {
-  state = { content: '' }
-
-  componentWillMount = async () => {
-    const content = await import('../markdown/lab1.md')
-    this.setState({ content })
-  }
-
   render() {
     return (
       <Layout>
-        <Markdown source={this.state.content} />
+        <Markdown source={content} />
       </Layout>
     )
   }
