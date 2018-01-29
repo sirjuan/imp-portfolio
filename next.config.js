@@ -25,7 +25,14 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        use: ['raw-loader'],
+        loader: 'emit-file-loader',
+        options: {
+          name: 'dist/[path][name].[ext]',
+        },
+      },
+      {
+        test: /\.md$/,
+        loader: 'raw-loader',
       },
       {
         test: /\.s(a|c)ss$/,
