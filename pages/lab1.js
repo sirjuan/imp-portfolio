@@ -6,8 +6,8 @@ export default class Lab1 extends React.Component {
   state = { content: '' }
 
   componentWillMount = async () => {
-    const content = await import('./markdown/lab1')
-    this.setState({ content: content.default() })
+    const content = await import('../markdown/lab1.md')
+    this.setState({ content })
   }
 
   render() {
