@@ -1,11 +1,7 @@
 const path = require('path')
 const glob = require('glob')
-const fs = require('fs')
 
 module.exports = {
-  node: {
-    fs,
-  },
   webpack: (config, { dev }) => {
     config.module.rules.push(
       {

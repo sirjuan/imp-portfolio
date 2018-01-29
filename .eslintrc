@@ -29,7 +29,4 @@
     "React": true,
     "import": true,
   },
-    "ecmaFeatures": {
-    "classes": true
-  },
 }

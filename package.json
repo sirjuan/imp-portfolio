@@ -9,7 +9,6 @@
     "babel-plugin-module-resolver": "^2.7.1",
     "babel-plugin-wrap-in-js": "^1.1.0",
     "bootstrap": "^4.0.0",
-    "chokidar": "^2.0.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^1.9.0",
@@ -37,7 +36,6 @@
     "react-transition-group": "^2.2.1",
     "reactstrap": "^5.0.0-alpha.4",
     "sass-loader": "^6.0.6",
-    "systemjs": "^0.20.19"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^2.4.0",
