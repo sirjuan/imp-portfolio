@@ -1,6 +1,5 @@
 import Markdown from 'react-markdown'
 import Layout from '../components/MyLayout'
-import PostLink from '../components/PostLink'
 import content from '../markdown/index.md'
 
 const Index = () => (

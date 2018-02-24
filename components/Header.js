@@ -50,8 +50,8 @@ export default class Header extends Component {
               <HeaderLink href="/lab2">Lab 2</HeaderLink>
               <HeaderLink href="/lab3">Lab 3</HeaderLink>
               <HeaderLink href="/lab4">Lab 4</HeaderLink>
-              <HeaderLink href="/lab4">Lab 5</HeaderLink>
-              <HeaderLink href="/lab4">Lab 6</HeaderLink>
+              <HeaderLink href="/lab5">Lab 5</HeaderLink>
+              <HeaderLink href="/lab6">Lab 6</HeaderLink>
             </Nav>
           </Collapse>
         </Navbar>

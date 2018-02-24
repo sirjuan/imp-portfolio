@@ -11,12 +11,6 @@ app.prepare()
   .then(() => {
     const server = express()
 
-    server.get('/p/:id', (req, res) => {
-      const actualPage = '/post'
-      const queryParams = { title: req.params.id }
-      app.render(req, res, actualPage, queryParams)
-    })
-
     server.get('/flickr/:tag', async (req, res) => {
       const { tag } = req.params
       const url = `https://api.flickr.com/services/feeds/photos_public.gne?tags=${tag}&format=json&nojsoncallback=true`
