@@ -1,20 +1,11 @@
+import Markdown from 'react-markdown'
 import Layout from '../components/MyLayout'
 import PostLink from '../components/PostLink'
-
-function getPosts() {
-  return [
-    { id: 'hello-nextjs', title: 'Hello Next.js' },
-    { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
-    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' },
-  ]
-}
+import content from '../markdown/index.md'
 
 const Index = () => (
   <Layout>
-    <h1>My Blog</h1>
-    <ul>
-      {getPosts().map(post => <PostLink key={post.id} post={post} />)}
-    </ul>
+    <Markdown source={content} escapeHtml={false} />
     <style jsx>{`
       h1, a {
         font-family: "Arial";

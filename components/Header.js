@@ -2,18 +2,7 @@ import { Component } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import stylesheet from 'styles/styles.scss' // eslint-disable-line
-// import 'jquery/dist/jquery'
-// import 'bootstrap/dist/js/bootstrap';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap'
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav } from 'reactstrap'
 import HeaderLink from './HeaderLink'
 
 const style = `
@@ -57,26 +46,12 @@ export default class Header extends Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <HeaderLink href="/about">About</HeaderLink>
-              <HeaderLink href="/posts">Posts</HeaderLink>
-              <HeaderLink href="https://github.com/reactstrap/reactstrap">Github</HeaderLink>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu >
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <HeaderLink href="/lab1">Lab 1</HeaderLink>
+              <HeaderLink href="/lab2">Lab 2</HeaderLink>
+              <HeaderLink href="/lab3">Lab 3</HeaderLink>
+              <HeaderLink href="/lab4">Lab 4</HeaderLink>
+              <HeaderLink href="/lab4">Lab 5</HeaderLink>
+              <HeaderLink href="/lab4">Lab 6</HeaderLink>
             </Nav>
           </Collapse>
         </Navbar>

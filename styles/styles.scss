@@ -1,1 +1,64 @@
 @import 'bootstrap/scss/bootstrap';
+
+/*
+  Overrides that are needed because of links missing
+  href-parameters that is caused by Next.js Link components
+ */
+
+.navbar-nav a:hover {
+  cursor: pointer !important;
+}
+
+.navbar-dark a.navbar-brand:hover,
+.navbar-dark a.navbar-brand:focus {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+// End of overrides
+.markdown table {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+
+  img {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  td {
+    padding: 0.5rem;
+  }
+}
+
+.markdown a {
+  img {
+    height: 200px;
+  }
+}
+
+pre {
+  background-color: #f6f8fa;
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  margin-top: 2rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
