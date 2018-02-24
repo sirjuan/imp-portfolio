@@ -28,5 +28,5 @@
   "globals": {
     "React": true,
     "import": true,
-  },
+  }
 }
